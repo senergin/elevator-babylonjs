@@ -4,8 +4,9 @@ Built in an afternoon, I wanted to play with the idea and Babylon.js a bit.
 
 ## How to run
 
-1. npm run build. This should start a watch process.
-2. Open index.html
+1. npm install .
+2. npm run build . This should start a watch process.
+3. Open index.html
 
 ## Rules of the elevator:
 
