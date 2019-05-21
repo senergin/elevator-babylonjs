@@ -1,18 +1,18 @@
 import { Animation, EasingFunction, Engine, HemisphericLight, Mesh, MeshBuilder, Scene, SineEase, TargetCamera, Vector3 } from "babylonjs";
 import { AdvancedDynamicTexture, Button, Rectangle, TextBlock } from "babylonjs-gui";
 
-// Constants
-const FLOOR_COUNT: number = 10;
-const TICK_DELTA_MS: number = 1000;
-const UI_WIDTH: number = 1280;
-const UI_HEIGHT: number = 720;
-const CAMERA_DISTANCE: number = 3;
-const SCENE_HEIGHT: number = 2;
-
 // Engine elements
 const _canvas: HTMLCanvasElement = document.getElementById("renderCanvas") as HTMLCanvasElement;
 const _engine: Engine = new Engine(_canvas, true);
 let _uiTexture: AdvancedDynamicTexture = null;
+
+// Constants
+const UI_WIDTH: number = _canvas.width;
+const UI_HEIGHT: number = _canvas.height;
+const FLOOR_COUNT: number = 10;
+const TICK_DELTA_MS: number = 1000;
+const CAMERA_DISTANCE: number = 3;
+const SCENE_HEIGHT: number = 2;
 
 // UI elements
 const _labels: Rectangle[] = new Array<Rectangle>(FLOOR_COUNT);
